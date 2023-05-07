@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de reproducción de audio en evento hover</title>
+  </head>
+  <body>
+    <h1 id="titulo">Hola esto es una prueba, pasa el mouse por aqui</h1>
+    <audio id="audio">
+      <source src="p1.wav" type="audio/mpeg">
+    </audio>
+    <script>
+      const titulo = document.getElementById('titulo');
+      const audio = document.getElementById('audio');
+
+      titulo.addEventListener('mouseover', () => {
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
